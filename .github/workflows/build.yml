@@ -16,7 +16,7 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v1
         with:
-          java-version: '21.0.6'
+          java-version: '21'
           distribution: 'adopt'
           cache: maven
       - name: Build with Maven
