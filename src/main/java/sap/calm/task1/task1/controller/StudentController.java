@@ -16,26 +16,23 @@ public class StudentController implements StudentInterface {
     @Autowired
     StudentService studentService;
 
+    public String sayHello(){return "Hello Shruthi!";}
 
     public List<Student> getAllStudents(){
         return studentService.getAllStudents();
     }
 
-
     public Optional<Student> getStudentByID(@PathVariable("myid") long id){
         return studentService.getStudentById(id);
     }
-
 
     public void createStudent(@RequestBody Student student){
         studentService.createStudent(student);
     }
 
-
     public void deleteStudentById(@PathVariable("myid") long id){
         studentService.deleteStudentById(id);
     }
-
 
     public void updateStudentById(@RequestBody Student student,@PathVariable("myid") long id){
         studentService.updateStudentById(student,id);

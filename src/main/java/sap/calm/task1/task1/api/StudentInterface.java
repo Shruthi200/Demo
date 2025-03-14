@@ -8,6 +8,9 @@ import java.util.Optional;
 
 public interface StudentInterface {
 
+    @GetMapping("/hello")
+    public String sayHello();
+
     @GetMapping()
     public List<Student> getAllStudents();
 
