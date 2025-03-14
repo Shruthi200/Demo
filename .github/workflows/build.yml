@@ -1,4 +1,4 @@
-name: project cicd flow
+name: Springboot-demo-ci-cd-workflow
 
 on:
   push:
